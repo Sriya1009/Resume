@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            position: center;
+            width: 100%;
+        }
+
+        .container-content {
+            padding-left: 40%;
+        }
+
+        .btn1 {
+            padding-top: 10px;
+        }
+
+        .btn {
+            border-color: black;
+            text-align: center;
+            height: 50px;
+            width: 100px;
+            border-radius: 5px;
+            background-color: antiquewhite;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: aliceblue;
+        }
+
+        input[type=textarea] {
+            width: 60%;
+            height: 70px;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+
+        input[type=text] {
+            padding-left: 10px;
+            width: 60%;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .row {
+            padding-top: 10px;
+            display: inline-block;
+        }
+
+        .col-1 {
+            float: left;
+            width: 20%;
+        }
+
+        .col-2 {
+            width: 50%;
+        }
+
+        input[type=radio] {
+            display: none;
+        }
+
+        .custom-radio {
+            display: inline-block;
+            cursor: pointer;
+            padding: 5px 10px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+
+        input[type=radio]:checked + .custom-radio {
+            background-color: #b3b3b3;
+        }
+    </style>
+    <title>Create Resume</title>
+</head>
+
+<body>
+    <div class="resume">
+        <div class="container">
+            <center>
+                <h1>Create your Resume</h1>
+            </center>
+            <div class="container-content">
+                <form>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="fname">Name:</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="text" id="fname" name="name" placeholder="Enter your name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="age">Age:</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="text" id="age" name="age" placeholder="Enter your age">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label>Gender:</label>
+                        </div>
+                        <div class="col-2">
+                            <label for="male" class="custom-radio">Male
+                                <input type="radio" id="male" name="gender" value="male">
+                            </label>
+                            <label for="female" class="custom-radio">Female
+                                <input type="radio" id="female" name="gender" value="female">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="ed">Education:</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="textarea" id="ed" name="education" placeholder="Enter your education details">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="work">Work experience:</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="textarea" id="work" name="work" placeholder="Enter your skills">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="add">Address:</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="textarea" id="add" name="address" placeholder="Enter your address">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="hobby">Hobbies:</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="textarea" id="hobby" name="hobby" placeholder="Enter your hobbies">
+                        </div>
+                    </div>
+                    <div class="btn1">
+                        <input type="submit" class="btn" value="Create">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
